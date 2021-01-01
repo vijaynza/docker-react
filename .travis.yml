@@ -5,8 +5,5 @@ services:
 before_install:
   - docker build -t vijaynza/docker-react -f Dockerfile.dev .
 
-install: travis_wait 30 install
-
-
 script:
   - docker run vijaynza/docker-react npm run test -- --coverage
