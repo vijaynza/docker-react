@@ -1,0 +1,9 @@
+sudoL required
+services:
+   - docker
+
+before_install:
+   - docker build -t vijaynza/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run vijaynza/docker-react npm run test -- --coverage
