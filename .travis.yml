@@ -6,7 +6,7 @@ before_install:
   - docker build -t vijaynza/docker-react -f Dockerfile.dev .
 
 install: 
-  - travis_wait 30 mvn install
+  - sudo travis_wait 30 mvn install
 
 
 script:
