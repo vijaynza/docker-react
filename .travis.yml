@@ -7,4 +7,4 @@ before_install:
 
 script:
   - docker images
-  - docker run test1 npm run test --env=jsdom -- --coverage
+  - sudo docker run test1 npm run test --env=jsdom -- --coverage
