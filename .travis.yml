@@ -7,4 +7,4 @@ before_install:
 
 script:
   - docker images
-  - docker run vijaynza/docker-react:latest npm run test -- --coverage
+  - docker run vijaynza/docker-react:latest npm run test --env=jsdom -- --coverage
